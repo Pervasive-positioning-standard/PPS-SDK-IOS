@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftyJSON
-import UIKit
+//import UIKit
 
 extension String {
     func base64Encoded() -> String? {

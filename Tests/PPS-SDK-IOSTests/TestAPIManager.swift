@@ -23,7 +23,7 @@ final class TestAPIManager: XCTestCase {
         let url = URL(string:"https://143.89.134.2:8084/signal-modes")!
         do{
             for i in 0...5{
-                try instance.getJson(url: url)
+                try await instance.getJson(url: url)
 //                Thread.sleep(forTimeInterval: 100)
             }
             
