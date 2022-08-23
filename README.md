@@ -1,3 +1,5 @@
 # PPS-SDK-IOS
 
-A description of this package.
+This is the IOS SDK for Pervasive Positioning Standard, included signal data classes, API manager and testing files.
+
+
