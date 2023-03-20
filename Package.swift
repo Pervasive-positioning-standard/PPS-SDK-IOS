@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "PPS-SDK-IOS",
     platforms: [
-            .iOS(.v15),
+            .iOS(.v14),
 //            .macOS(.v10_14)
     ],
     products: [
@@ -19,15 +19,16 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "4.0.0"),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.6.1"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "PPS-SDK-IOS",
-            dependencies: ["SwiftyJSON"]),
+            dependencies: ["SwiftyJSON","Alamofire"]),
         .testTarget(
             name: "PPS-SDK-IOSTests",
-            dependencies: ["PPS-SDK-IOS","SwiftyJSON"]),
+            dependencies: ["PPS-SDK-IOS","SwiftyJSON","Alamofire"]),
     ]
 )

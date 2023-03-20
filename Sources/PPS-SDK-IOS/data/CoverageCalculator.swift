@@ -124,7 +124,7 @@ public class CoverageCalculator {
         I1 = gridID.index(gridID.startIndex, offsetBy: 9)
         I2 = gridID.index(gridID.startIndex, offsetBy: 16)
         var y:Int = Int(gridID[I1..<I2]) ?? 0 ;
-        print("grid_is_coverd "+gridID+" x:"+String(x)+" y:"+String(y))
+//        print("grid_is_coverd "+gridID+" x:"+String(x)+" y:"+String(y))
         var twoToPower:Double = 1048576.0;
         //calculate lon/lat of current grid
         
